@@ -5,6 +5,16 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
+const buttonPress = document.getElementsByClassName('number');
+for (var i = 0; i < buttonPress.length; i++) {
+    buttonPress[i].addEventListener('click', printResult);
+}
+
+function printResult() {
+
+}
+
+
 var calculatorModule = function () {
     var memory = 0;
     var total = 0;
